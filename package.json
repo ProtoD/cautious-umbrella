@@ -1,0 +1,39 @@
+{
+  "name": "cautious-umbrella",
+  "version": "0.1.9",
+  "author": "ProtoD <prototype.digital@outlook.com>",
+  "description": "Async HTTP client",
+  "main": "dist/cautious-umbrella.js",
+  "module": "dist/cautious-umbrella.es6.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProtoD/cautious-umbrella.git"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.1.5",
+    "jest": "^23.1.0",
+    "regenerator-runtime": "^0.11.1",
+    "rollup": "^0.60.7",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  }
+}
