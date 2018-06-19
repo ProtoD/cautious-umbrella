@@ -369,4 +369,11 @@ function axiosExecute(axios) {
 
 }
 
-export { Request, axiosExecute };
+function cautiousUmbrella() {
+    return {
+        Request,
+        axiosExecute
+    };
+}
+
+export default cautiousUmbrella;
