@@ -1,6 +1,6 @@
 {
   "name": "cautious-umbrella",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "author": "ProtoD <prototype.digital@outlook.com>",
   "description": "Async HTTP client",
   "main": "dist/cautious-umbrella.js",
