@@ -4,7 +4,6 @@
   "author": "ProtoD <prototype.digital@outlook.com>",
   "description": "Async HTTP client",
   "main": "dist/cautious-umbrella.js",
-  "module": "dist/cautious-umbrella.es6.js",
   "scripts": {
     "test": "jest",
     "build": "rollup -c"
