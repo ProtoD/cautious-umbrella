@@ -6,7 +6,6 @@ import _map from 'lodash/map';
 class Request {
   constructor(config) {
     this._decodeResponse = config.decodeResponse.bind(this);
-    this._encodeRequest = config.encodeRequest.bind(this);
     this._execute = config.execute.bind(this);
     this._resourceTraits = config.resources;
     this._defaultIdentifier = config.defaultIdentifier || 'id';
@@ -16,7 +15,7 @@ class Request {
     return this._defaultIdentifier;
   }
 
-  _callRequest(config) {
+  _executeRequest(config) {
     let resourceTraits = this._getResourceTraits(config);
     return this._execute(config, resourceTraits);
   }
@@ -209,7 +208,7 @@ class Request {
     let requestConfig = this._extractHeadRequestConfig(config);
 
     try {
-      let response = await this._callRequest(requestConfig);
+      let response = await this._executeRequest(requestConfig);
       response = this._callDecodeResponse(response, requestConfig);
       await this._loadReferences(response, config);
       response = this._transformResponse(response, config);
